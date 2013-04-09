@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+ DocumentRoot /vagrant/support.loc
+ ServerName support.loc
+
+ <Directory /vagrant/support.loc>
+   Options All
+   AllowOverride All
+ </Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+ DocumentRoot /vagrant/nathan.loc
+ ServerName nathan.loc
+
+<Directory /vagrant/nathan.loc>
+   Options All
+   AllowOverride All
+ </Directory>
+</VirtualHost>
